@@ -1,0 +1,22 @@
+// 全站共用
+@import "base/default";
+@import "variable/variable";
+@import "base/_mixin.scss";
+
+//  頁首頁尾
+@import "layout/header";
+@import "layout/header2";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/title";
+@import "layout/page";
+
+//  頁數
+@import "page/home";
+@import "page/optical";
+@import "page/sunglasses";
+@import "page/location-1";
+@import "page/location-2";
+@import "page/question";
+@import "page/blog";
+@import "page/blog-2";

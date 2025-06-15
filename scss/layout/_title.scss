@@ -1,0 +1,29 @@
+.title-box{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-top: 96px;
+    @include tablet{
+        padding: 80px 36px 0;
+    }
+    @include mobile{
+        padding: 40px 13px 0;
+    }
+    .title-color{
+        width: 8px;
+        height: 72px;
+        background-color: #9F1213;
+        @include mobile{
+            height: 36px;
+        }
+    }
+    .title-text{
+        font-size: 48px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+}

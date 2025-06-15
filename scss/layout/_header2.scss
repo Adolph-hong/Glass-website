@@ -1,0 +1,40 @@
+.header2 {
+    background-color: #650300;
+
+    .nav {
+        max-width: $all-big-width;
+        max-height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        @include tablet {
+            padding: 0 36px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            color: #FBF2F2;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            display: flex;
+
+            @include mobile {
+                display: none;
+            }
+
+            .nav-logo {
+                width: 40px;
+                height: 40px;
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}

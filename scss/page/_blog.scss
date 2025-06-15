@@ -1,0 +1,105 @@
+.blog-big-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 60px;
+    @include tablet{
+        gap: 24px;
+    }
+    @include mobile{
+        padding-top: 24px;
+    }
+    .blog-box {
+        display: flex;
+        gap: 24px;
+
+        @include tablet {
+            padding: 0 36px 0;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        a {
+            .blog-img {
+                max-width: 636px;
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
+        .blog-container {
+            max-width: 636px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 32px;
+                color: #650300;
+
+                @include tablet {
+                    font-size: 24px
+                }
+            }
+
+            .date-box {
+                display: flex;
+                justify-content: space-between;
+
+                .name {
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    @include tablet {
+                        font-size: 16px
+                    }
+                }
+            }
+
+            .text {
+                font-size: 20px;
+                color: #555555;
+                padding-top: 16px;
+
+                @include tablet {
+                    font-size: 16px;
+                    padding-top: 4px;
+                }
+
+                @include mobile {
+                    display: none;
+                }
+
+                .text-tab {
+                    @include tablet {
+                        display: none;
+                    }
+                }
+
+                .text-more {
+                    display: none;
+
+                    @include tablet {
+                        display: inline;
+                    }
+                }
+            }
+
+            .more {
+                font-size: 36px;
+                color: #650300;
+                margin-left: auto;
+                margin-top: auto;
+
+                @include tablet {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}

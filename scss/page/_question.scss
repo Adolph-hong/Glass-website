@@ -1,0 +1,41 @@
+.question{
+    .title-q{
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 32px;
+        @include tablet{
+            max-width: 768px;
+            padding: 32px 36px 0;
+        }
+        @include mobile{
+            max-width: 375px;
+            padding: 24px 13px 0;
+        }
+    }
+
+    .all-question{
+        max-width: 856px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px 0px 80px;
+        @include tablet{
+            max-width: 768px;
+            padding: 24px 36px 80px;
+        }
+        @include mobile{
+            gap: 24px;
+            padding: 24px 13px 64px;
+        }
+        .all-q{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            .all-title{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
